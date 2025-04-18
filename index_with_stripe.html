@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ゼロから 4 週間で AWS 実務レベルに到達する AI ブートキャンプ</title>
+    <style>
+      :root {
+        --accent: #2563eb;
+        --accent-light: #3b82f6;
+        --bg: #f8fafc;
+        --text: #0f172a;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      header {
+        padding: 4rem 1rem 6rem;
+        text-align: center;
+        background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+        color: white;
+      }
+      header h1 {
+        font-size: 2.2rem;
+        margin: 0 0 1rem;
+      }
+      header p {
+        font-size: 1.15rem;
+        margin-bottom: 2rem;
+      }
+      .btn {
+        display: inline-block;
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+        background: white;
+        color: var(--accent);
+        border-radius: 0.5rem;
+        font-weight: 600;
+        transition: 0.2s ease-in-out;
+      }
+      .btn:hover {
+        background: #dbeafe;
+      }
+      section {
+        max-width: 960px;
+        margin: 3rem auto;
+        padding: 0 1rem;
+      }
+      section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        position: relative;
+      }
+      section h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        margin: 0.5rem auto 0;
+        background: var(--accent);
+      }
+      .features {
+        display: grid;
+        gap: 1.5rem;
+      }
+      .feature {
+        background: white;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      }
+      .pricing {
+        display: grid;
+        gap: 2rem;
+      }
+      .plan {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      }
+      .plan h3 {
+        margin-top: 0;
+        font-size: 1.35rem;
+      }
+      .plan .price {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0.5rem 0 1rem;
+      }
+      .plan ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.5rem;
+      }
+      .plan li {
+        margin: 0.4rem 0;
+      }
+      table.curriculum {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+      }
+      table.curriculum th,
+      table.curriculum td {
+        border: 1px solid #e2e8f0;
+        padding: 0.6rem;
+        text-align: left;
+      }
+      footer {
+        text-align: center;
+        font-size: 0.85rem;
+        color: #475569;
+        padding: 2rem 0 3rem;
+      }
+      @media (min-width: 720px) {
+        .features { grid-template-columns: repeat(2, 1fr); }
+        .pricing { grid-template-columns: repeat(2, 1fr); }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ゼロから 4 週間で AWS 実務レベルに到達する<br />AI ブートキャンプ</h1>
+      <p>1 日 15 分 × 4 週間。<br />AI 添削 & 週末ライブで「わからない」をゼロに。</p>
+      <a class='btn' href='https://buy.stripe.com/test_00gg1ogQFabc4W46oo' target='_blank' rel='noopener'>先着 10 名 30% OFF で予約する</a>
+    </header>
+
+    <section>
+      <h2>こんなお悩みありませんか？</h2>
+      <div class='features'>
+        <div class='feature'>資格スクールは高額＆座学ばかりで“触れない”</div>
+        <div class='feature'>無料チュートリアルが点在し、何から始めればいいか分からない</div>
+        <div class='feature'>求人は「実務経験 1 年以上」ばかり…</div>
+        <div class='feature'>転職したくても「ポートフォリオがない」</div>
+      </div>
+    </section>
+    <section>
+      <h2>この講座で解決！</h2>
+      <div class='features'>
+        <div class='feature'><strong>マイクロ動画</strong>：1 日 15 分で基礎をインプット</div>
+        <div class='feature'><strong>AI 添削</strong>：課題を即フィードバックで詰まらない</div>
+        <div class='feature'><strong>週末ライブ</strong>：講師が画面共有で構築を実況＆質疑</div>
+        <div class='feature'><strong>模擬案件</strong>：実務さながらの要件定義→設計→実装</div>
+      </div>
+    </section>
+    <section>
+      <h2>4 週間カリキュラム</h2>
+      <table class='curriculum'>
+        <thead><tr><th>週</th><th>チャプター</th><th>主なハンズオン</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>AWS 全体像 / VPC 基礎 / ルーティング</td><td>2 AZ にまたがる VPC を構築</td></tr>
+          <tr><td>2</td><td>SG & NACL / IAM / S3 & CloudFront</td><td>S3 静的サイトを CloudFront で配信</td></tr>
+          <tr><td>3</td><td>EC2 / ALB / Auto Scaling / CloudWatch</td><td>ALB 配下に EC2 を 2 台配置</td></tr>
+          <tr><td>4</td><td>IaC 入門 / 模擬案件: 要件→設計→構築</td><td>CloudFormation で一式テンプレ化</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>料金プラン</h2>
+      <div class='pricing'>
+        <div class='plan' id='lite'><h3>Lite プラン</h3><div class='price'>¥120,000</div>
+          <ul><li>マイクロ動画（全 20 本）</li><li>週末ライブ (4 回)</li><li>AI 添削 Bot</li></ul>
+          <a class='btn' href='https://buy.stripe.com/test_00gg1ogQFabc4W46oo' target='_blank' rel='noopener'>今すぐ予約</a>
+        </div>
+        <div class='plan' id='pro'><h3>Pro プラン</h3><div class='price'>¥240,000</div>
+          <ul><li>Lite すべて + 個別メンタリング (月 2 回)</li><li>転職サポートチャネル招待</li><li>模擬案件レビュー</li></ul>
+          <a class='btn' href='https://buy.stripe.com/test_00gg1ogQFabc4W46oo' target='_blank' rel='noopener'>今すぐ予約</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>よくある質問</h2>
+      <div class='features'>
+        <div class='feature'><strong>Q:</strong> 完全初心者でも受講できますか？<br /><strong>A:</strong> はい。PC 基本操作ができれば問題ありません。</div>
+        <div class='feature'><strong>Q:</strong> 仕事と両立できますか？<br /><strong>A:</strong> 平日は 15 分動画 +課題 30 分が目安です。</div>
+        <div class='feature'><strong>Q:</strong> 返金ポリシーは？<br /><strong>A:</strong> キックオフ 7 日前まで全額返金、それ以降は日割りです。</div>
+        <div class='feature'><strong>Q:</strong> 法人申込はできますか？<br /><strong>A:</strong> 可能です。請求書払い対応します。</div>
+      </div>
+    </section>
+    <footer>&copy; 2025 Deep Research Bootcamp</footer>
+  </body>
+</html>
